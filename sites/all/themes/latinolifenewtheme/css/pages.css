@@ -1,0 +1,1147 @@
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+
+
+/*
+ * Body
+ */
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#FFFFFF;
+}
+
+p{
+font-size:14px;
+}
+
+
+body.node-type-article .field-name-field-food-type a{
+    font-weight: bold;
+    color: #f2a448;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+
+
+
+.region-header #block-views-test-block-14,
+.region-header #block-views-test-block-19,
+.region-header .block-views{
+	display: inline-block;
+}
+
+#block-views-test-block-6{
+	display:block;
+}
+
+
+
+
+
+#page-wrapper {
+}
+
+#page {
+}
+
+/*
+ * The skip-link link will be completely hidden until a user tabs to the link.
+ * See the element-focusable rule in system.base.css.
+ */
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/*
+ * Header
+ */
+#headercontainer {
+	background-color:#FFF;
+	width:1112px;
+	height:117px;
+}
+body.not-front #headercontainer {
+	height: 172px;
+}
+#header {
+	background-image:url(../images/headerfondo.jpg);
+	background-repeat:no-repeat;
+	width:975px;
+	height:117px;
+	position:relative;
+	top:-29px;
+}
+
+#headersearch {
+	float:right;
+	background-image:url(../../../../default/files/searchbox.jpg);
+	width:117px;
+	height:117px;
+}
+
+#header .section {
+}
+
+#logo {
+    float: left;
+    margin-bottom: -8px;
+    margin-top: 0;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+#logo img {
+    left: -26px;
+    position: relative;
+    top: -22px;
+    vertical-align: bottom;
+}
+
+#name-and-slogan /* Wrapper for website name and slogan */ {
+  float: left;
+}
+
+h1#site-name,
+div#site-name /* The name of the website */ {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+#site-name a:link,
+#site-name a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+#site-name a:hover,
+#site-name a:focus {
+  text-decoration: underline;
+}
+
+#site-slogan /* The slogan (or tagline) of a website */ {
+}
+
+.region-header /* Wrapper for any blocks placed in the header region */ {
+  clear: both; /* Clear the logo */
+}
+
+#addevent {
+	text-align:center;
+	background-color:#390;
+	float:right;
+	width:200px;
+	color:#FFF;
+}
+
+#addvenue {
+	text-align:center;
+	background-color:#3C0;
+	float:right;
+	width:200px;
+	color:#FFF;
+}
+
+#addevent {
+	text-align:center;
+	background-color:#390;
+	float:right;
+	width:200px;
+	color:#FFF;
+}
+
+#navigation {
+	}
+/*
+ * Main (container for everything else)
+ */
+#supercontainer {
+	width:1112px;
+	background-color:#C30;
+}
+	 
+#main-wrapper {
+}
+
+
+#main {
+}
+
+/*
+ * Content
+ */
+#highlightedarea {
+	display:inline;
+	height:77px;
+	width:1112px;
+
+}
+
+#highlighted {
+	padding-left:15px;
+	margin-top:20px;
+	height:77px;
+	width:958px;
+
+}
+
+
+#subscribe {
+	background-image:url(../images/newsletter.jpg);
+	background-repeat:no-repeat;
+	float:right;
+	position:relative;
+	top:10px;
+	height:60px;
+	width:118px;
+}
+#degrade {
+	font-size:11px;
+	font-weight:bold;
+	background-image:url(../../../../default/files/linegreen.jpg);
+	background-repeat:x;
+	width:1112px;
+	height:40px;
+	position:relative;
+	top:-27px;
+}
+#submenuheader{
+	display:block;
+	position:relative;
+	top:10px;
+	left:42px;
+	color:white;
+	font-size:16px;
+	text-shadow:1px 2px 3px #111111;
+	}
+#submenuheader a{
+	color:white;
+	}
+#content {
+}
+
+#content .section {
+	position:relative;
+	top:-40px;
+}
+
+.breadcrumb /* The path to the current page in the form of a list of links */ {
+  padding-bottom: 0; /* Undo system.css */
+}
+
+h1.title, /* The title of the page */
+h2.node-title, /* Title of a piece of content when it is given in a list of content */
+h2.block-title, /* Block title */
+h2.title, /* Comment section heading */
+h2.comment-form, /* Comment form heading */
+h3.title /* Comment title */ {
+  margin: 0 0 15px;
+}
+
+tr.even /* Some tables have rows marked even or odd. */ {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+tr.odd {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+div.messages /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */ {
+  margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
+}
+
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.status /* Normal priority messages */ {
+}
+
+div.warning,
+tr.warning /* Medium priority messages */ {
+  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+}
+
+div.error,
+tr.error /* High priority messages. See also the .error declaration below. */ {
+}
+
+.error /* Errors that are separate from div.messages status messages. */ {
+  /* color: #e55; */ /* Drupal core uses a #e55 background */
+}
+
+.warning /* Warnings that are separate from div.messages status messages. */ {
+  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+}
+
+div.tabs /* See also the tabs.css file. */ {
+}
+
+.region-help /* Help text on a page */ {
+}
+
+.more-help-link /* Link to more help */ {
+}
+
+.region-content /* Wrapper for the actual page content */ {
+}
+
+ul.links /* List of links */ {
+}
+
+ul.links.inline {
+  display: block; /* Let the links be inline, but the container be a block. */
+}
+
+ul.links li {
+  padding: 0 1em 0 0; /* LTR */
+}
+
+.item-list .pager /* A list of page numbers when more than 1 page of content is available */ {
+  padding: 0;
+}
+
+.item-list .pager li /* Each page number in the pager list */ {
+  padding: 0 0.5em;
+}
+
+.feed-icon /* The link to the RSS or Atom feed for the current list of content */ {
+}
+
+.more-link /* Aggregator, blog, and forum more link */ {
+}
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-first
+ * (see the layout.css file.)
+ */
+.region-sidebar-first {
+}
+
+.region-sidebar-first .section {
+}
+
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+.region-sidebar-second {
+}
+
+.region-sidebar-second .section {
+}
+
+/*
+ * Footer
+ */
+.region-footer {
+}
+
+/*
+ * Page bottom
+ */
+.region-bottom /* Wrapper for any blocks placed in the page bottom region */ {
+}
+
+
+
+
+
+/* KW media browser css **************************************************************************************************************************************************/
+/* KW media browser css **************************************************************************************************************************************************/
+/* KW media browser css **************************************************************************************************************************************************/
+/* KW media browser css **************************************************************************************************************************************************/
+
+body.not-logged-in #main-wrapper .error{
+display:none !important;
+}
+
+
+#block-block-44{
+height:150px;
+width: 305px;
+}
+
+
+#addevent2_reverse {
+border: medium solid #bd252b;
+color: #f4b951;
+display: block;
+font-weight: bold;
+padding: 11px 0;
+text-align: center;
+width: 176px;
+}
+
+
+#block-quicktabs-articles-columns-reviews{
+height:auto !important;
+}
+
+
+/* WHAT PEOPLE SAY */
+
+#block-views-what-people-say-block .views-field-body p,
+#block-views-what-people-say-block .views-field-body span,
+#block-views-what-people-say-block .views-field-body em{
+font-size:13px !important;
+line-height:17px !important;
+}
+#block-views-what-people-say-block .view-header p{
+margin-bottom:5px;
+}
+
+
+
+
+
+
+
+
+/* COMPETITION BLOCK */
+#block-views-competition-blocks-block{
+
+}
+#block-views-competition-blocks-block .view-header p{
+margin-bottom:-10px;
+}
+#block-views-competition-blocks-block .views-row{
+margin-bottom:10px;
+border-bottom:solid 1px #008000;
+min-height:160px;
+}
+#block-views-competition-blocks-block .views-field-field-competition-image{
+float:left;
+padding-right:20px;
+}
+#block-views-competition-blocks-block .views-field-field-description p{
+font-size:16px !important;
+margin-bottom:-10px;
+}
+#block-views-competition-blocks-block .views-field-field-call-to-action p{
+font-size:14px !important;
+color:#57aa30 !important;
+}
+#block-views-competition-blocks-block .views-field-field-call-to-action a{
+font-weight:bold;
+text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+#block-views-print-edition-block .view-content{
+margin-bottom:15px;
+}
+#block-views-print-edition-block .view-header p{
+margin-top:5px;
+margin-bottom:0px;
+}
+#block-views-print-edition-block .view-footer p{
+margin-top:5px;
+}
+
+
+#block-views-test-block,
+#block-views-test-block .views-view-grid{
+margin-bottom:10px;
+margin-top: 0px
+}
+
+
+.node-type-article img.media-image{
+/*float:left;*/
+padding-right:15px;
+}
+
+.media-youtube-video{
+float:none !important;
+}
+
+/* KW homepage menu bits */
+#headercontainer {
+margin-top: 25px;
+}
+
+#degrade,
+#navigation{
+display:none;
+}
+
+#main-wrapper{
+margin-top: 45px;
+}
+body.front #main-wrapper{
+margin-top: 100px;
+}
+
+.region-header{
+width:1110px;
+}
+
+#block-superfish-1{
+float:left;
+width:555px;
+background-color:#c3d25b;
+background-image:url(super_leftbg.jpg);
+background-repeat:no-repeat;
+background-position:center;
+margin-right:2px;
+}
+#block-superfish-2{
+float:left;
+width:553px;
+background-color:#f6b853;
+background-image:url(super_rightbg.jpg);
+background-repeat:no-repeat;
+background-position:center;
+}
+
+.block-superfish{
+height:76px;
+}
+.block-superfish .sf-menu{
+display: table;
+    float: none;
+margin-left: auto;
+    margin-right: auto;
+}
+.block-superfish .content{
+padding-top:40px;
+}
+.block-superfish h2{
+display:none;
+}
+.block-superfish li{
+background-color: transparent !important;
+background:none !important;
+}
+.block-superfish a{
+font-family:Arial, Helvetica, sans-serif !important;
+font-weight:bold !important;
+font-size:13px !important;
+color:#fff !important;
+text-shadow:1px 1px 0 #000,
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+0px 1px 0 #000,
+1px 0px 0 #000,
+0px -1px 0 #000,
+-1px 0px 0 #000;
+-webkit-font-smoothing: subpixel-antialiased !important;  
+padding: 11px 7px !important; 
+border:none !important;
+letter-spacing:0.5px !important;
+}
+.block-superfish li.menuparent a{
+padding-right:15px !important;
+}
+.block-superfish .sf-sub-indicator{
+right: 0.15em;
+top: 1em;
+width:11px;
+}
+
+/* dropdowns */
+#block-superfish-1 .menuparent ul{
+background:none !important;
+background-color:#596f1e !important;
+border-bottom-right-radius: 8px;
+-webkit-border-bottom-right-radius: 8px;
+-moz-border-bottom-right-radius: 8px;
+}
+#block-superfish-1 ul li:hover,
+#block-superfish-1 ul li a:hover,
+#block-superfish-1 li.sfHover{
+background-color:#596f1e !important;
+}
+#block-superfish-1 .menuparent.sfHover a{
+background-color:#596f1e !important;
+}
+#block-superfish-1 .menuparent ul li a{
+padding:6px 10px 6px 10px!important;
+margin:0px;
+margin-right:4px;
+}
+#block-superfish-1 .menuparent ul{
+padding:4px!important;
+}
+#block-superfish-1 .menuparent ul li{
+padding:2px!important;
+}
+#block-superfish-1 .menuparent ul li:hover{
+background-color:transparent !important;
+}
+#block-superfish-1 .menuparent ul li a:hover{
+background-color:#c3d25b !important;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+
+
+#block-superfish-2 .menuparent ul{
+background:none !important;
+background-color:#c74320 !important;
+border-bottom-right-radius: 8px;
+-webkit-border-bottom-right-radius: 8px;
+-moz-border-bottom-right-radius: 8px;
+}
+#block-superfish-2 ul li:hover,
+#block-superfish-2 ul li a:hover,
+#block-superfish-2 li.sfHover{
+background-color:#c74320 !important;
+}
+#block-superfish-2 .menuparent.sfHover a{
+background-color:#c74320 !important;
+}
+#block-superfish-2 .menuparent ul li a{
+padding:6px 10px 6px 10px!important;
+margin:0px;
+margin-right:4px;
+}
+#block-superfish-2 .menuparent ul{
+padding:4px!important;
+}
+#block-superfish-2 .menuparent ul li{
+padding:2px!important;
+}
+#block-superfish-2 .menuparent ul li:hover{
+background-color:transparent !important;
+}
+#block-superfish-2 .menuparent ul li a:hover{
+background-color:#f0b95a !important;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+
+
+
+.rhs_searchnews{
+display:block;
+margin-top: -23px;
+}
+
+
+
+
+
+/* GALLERY BITS */
+
+body.page-galleria .view-galleria tr td .field-content{
+font-size:12px !important;
+}
+body.page-galleria .view-galleria tr td{
+vertical-align:top;
+}
+
+body.page-galleriashow .view-galleria .views-view-grid tr td,
+body.page-galleria .view-galleria .views-view-grid tr td{
+width:154px;
+}
+
+
+
+
+
+
+/* KW Calendar BLOCK Colors */
+
+#block-views-event-clendar-block-1{
+background-color: #fffdeb;
+background-image: url("eventscalendar_header.jpg");
+background-repeat: no-repeat;
+width:303px;
+}
+#block-views-event-clendar-block-1 .date-nav{
+margin-bottom:-28px !important;
+}
+#block-views-event-clendar-block-1 .date-nav{
+margin-bottom:-28px !important;
+}
+#block-views-event-clendar-block-1 h2{
+display:none;
+}
+#block-views-event-clendar-block-1 .content{
+padding-top:26px;
+}
+#block-views-event-clendar-block-1 tbody td{
+background-color: #fffdeb;
+}
+#block-views-event-clendar-block-1 tbody td.today{
+background-color: #b41d2c;
+}
+#block-views-event-clendar-block-1 tbody td.today a{
+color:white;
+}
+#block-views-event-clendar-block-1 tbody td a{
+color: #000;
+}
+#block-views-event-clendar-block-1 .view .date-nav-wrapper .date-nav {
+ margin-bottom: -11px;
+}
+#block-views-event-clendar-block-1 .calendar-calendar th.days {
+    background-color: #eec7ca;
+    border: 1px solid #e9adb0;
+    color: #000;
+    font-weight: bold;
+}
+#block-views-event-clendar-block-1 .view-header {
+    background-color: #cb5458;
+}
+#block-views-event-clendar-block-1 .view .date-nav-wrapper .date-heading {
+background-color:transparent;
+}
+#block-views-event-clendar-block-1 .view .date-nav-wrapper .date-heading a {
+    color: #fff;
+    display: block;
+    padding: 5px 0;
+}
+#block-views-event-clendar-block-1 .view .date-nav-wrapper .date-next,
+#block-views-event-clendar-block-1 .view .date-nav-wrapper .date-prev{
+background-color:transparent;
+padding-top:9px;	
+}
+#block-views-event-clendar-block-1 .view .date-nav-wrapper .date-next a,
+#block-views-event-clendar-block-1 .view .date-nav-wrapper .date-prev a{
+color:white;
+font-size:30px;
+}
+
+
+
+
+
+
+
+
+/* KW Calendar BLOCK 4 Colors */
+
+#block-views-event-clendar-block-4{
+background-color: #fffdeb;
+background-image: url("eventscalendar_header.jpg");
+background-repeat: no-repeat;
+width:303px;
+}
+#block-views-event-clendar-block-4 .date-nav{
+margin-bottom:-28px !important;
+}
+#block-views-event-clendar-block-4 .date-nav{
+margin-bottom:-28px !important;
+}
+#block-views-event-clendar-block-4 h2{
+display:none;
+}
+#block-views-event-clendar-block-4 .content{
+padding-top:26px;
+}
+#block-views-event-clendar-block-4 tbody td{
+background-color: #fffdeb;
+}
+#block-views-event-clendar-block-4 tbody td.today{
+background-color: #b41d2c;
+}
+#block-views-event-clendar-block-4 tbody td.today a{
+color:white;
+}
+#block-views-event-clendar-block-4 tbody td a{
+color: #000;
+}
+#block-views-event-clendar-block-4 .view .date-nav-wrapper .date-nav {
+ margin-bottom: -11px;
+}
+#block-views-event-clendar-block-4 .calendar-calendar th.days {
+    background-color: #eec7ca;
+    border: 1px solid #e9adb0;
+    color: #000;
+    font-weight: bold;
+}
+#block-views-event-clendar-block-4 .view-header {
+    background-color: #cb5458;
+}
+#block-views-event-clendar-block-4 .view .date-nav-wrapper .date-heading {
+background-color:transparent;
+}
+#block-views-event-clendar-block-4 .view .date-nav-wrapper .date-heading a {
+    color: #fff;
+    display: block;
+    padding: 5px 0;
+}
+#block-views-event-clendar-block-4 .view .date-nav-wrapper .date-next,
+#block-views-event-clendar-block-4 .view .date-nav-wrapper .date-prev{
+background-color:transparent;
+padding-top:9px;	
+}
+#block-views-event-clendar-block-4 .view .date-nav-wrapper .date-next a,
+#block-views-event-clendar-block-4 .view .date-nav-wrapper .date-prev a{
+color:white;
+font-size:30px;
+}
+
+
+
+
+
+
+
+
+
+/* KW Calendar PAGE Colors */
+body.page-event-calendar .view-item-Event_clendar a{
+color:#000 !important;
+}
+
+body.page-event-calendar .view-Event-clendar .date-heading{
+background-color: #b41d2c;
+padding:8px 0px;
+color:#fff;
+}
+
+body.page-event-calendar .view-Event-clendar{
+background-color: #fffdeb;
+    background-image: url("eventscalendar_header.jpg");
+    background-repeat: no-repeat;
+
+}
+body.page-event-calendar .view-Event-clendar h2{
+display:none;
+}
+body.page-event-calendar .view-Event-clendar .content{
+padding-top:26px;
+}
+body.page-event-calendar .view-Event-clendar tbody td{
+background-color: #fffdeb;
+}
+body.page-event-calendar .view-Event-clendar td.today{
+background-color: #b41d2c !important;
+border-color:#b41d2c !important;
+}
+body.page-event-calendar .view-Event-clendar td.today a{
+color:white;
+}
+body.page-event-calendar .view-Event-clendar td a{
+color: #000;
+}
+body.page-event-calendar .view-Event-clendar .view .date-nav-wrapper .date-nav {
+ margin-bottom: -11px;
+}
+body.page-event-calendar .view-Event-clendar .calendar-calendar th.days {
+    background-color: #eec7ca;
+    border: 1px solid #e9adb0;
+    color: #000;
+    font-weight: bold;
+}
+body.page-event-calendar .view-Event-clendar .view-header {
+    background-color: #cb5458;
+}
+body.page-event-calendar .view-Event-clendar .view .date-nav-wrapper .date-heading {
+background-color:transparent;
+}
+body.page-event-calendar .view-Event-clendar .view .date-nav-wrapper .date-heading a {
+    color: #fff;
+    display: block;
+    padding: 5px 0;
+}
+body.page-event-calendar .view-Event-clendar .date-nav .date-next,
+body.page-event-calendar .view-Event-clendar .date-nav .date-prev{
+background-color:transparent;
+padding-top:12px;	
+}
+body.page-event-calendar .view-Event-clendar .date-nav .date-next a,
+body.page-event-calendar .view-Event-clendar .date-nav .date-prev a{
+color:white;
+font-size:15px;
+}
+
+body.page-event-calendar .calendar-calendar .month-view .full td.multi-day div.monthview{
+background-color: #d17a80;
+}
+body.page-event-calendar .calendar-calendar .week-view .full td.multi-day div.weekview{
+background-color: #d17a80;
+}
+body.page-event-calendar .calendar-calendar .day-view .full td.multi-day div.dayview{
+background-color: #d17a80;
+}
+
+body.page-event-calendar .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues{
+background-color: #d17a80;
+}
+body.page-event-calendar .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff{
+background-color: #d17a80;
+}
+body.page-event-calendar .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues{
+background-color: #d17a80;
+}
+body.page-event-calendar .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff{
+background-color: #d17a80;
+}
+
+
+
+
+/* NEW REVIEW PAGES  */
+body.page-music-reviews #content .views-row,
+body.page-food-reviews #content .views-row,
+body.page-dance-reviews #content .views-row,
+body.page-culture-reviews #content .views-row,
+body.page-food-articles #content .views-row,
+body.page-recipes #content .views-row{
+border-bottom: 1px solid green;
+margin-bottom: 10px;
+min-height: 189px;
+}
+
+body.page-music-reviews #content .views-row .views-field-field-image,
+body.page-food-reviews #content .views-row .views-field-field-image,
+body.page-dance-reviews #content .views-row .views-field-field-image,
+body.page-culture-reviews #content .views-row .views-field-field-image,
+body.page-food-articles #content .views-row .views-field-field-image,
+body.page-recipes #content .views-row .views-field-field-image{
+float:left;
+padding-right:15px;
+}
+
+body.page-music-reviews #content .views-row .views-field-field-article-type,
+body.page-food-reviews #content .views-row .views-field-field-article-type,
+body.page-dance-reviews #content .views-row .views-field-field-article-type,
+body.page-culture-reviews #content .views-row .views-field-field-article-type,
+body.page-food-articles #content .views-row .views-field-field-article-type,
+body.page-recipes #content .views-row .views-field-field-article-type{
+font-size: 14px !important;
+text-transform: uppercase !important;
+}
+body.page-music-reviews #content .views-row .views-field-field-article-type a,
+body.page-food-reviews #content .views-row .views-field-field-article-type a,
+body.page-dance-reviews #content .views-row .views-field-field-article-type a,
+body.page-culture-reviews #content .views-row .views-field-field-article-type a,
+body.page-food-articles #content .views-row .views-field-field-article-type a,
+body.page-recipes #content .views-row .views-field-field-article-type a{
+/*color:red !important;*/
+color:#339900;
+	font-weight:bold;
+	font-size:16px;
+}
+
+body.page-music-reviews #content .views-row .views-field-title,
+body.page-food-reviews #content .views-row .views-field-title,
+body.page-dance-reviews #content .views-row .views-field-title,
+body.page-culture-reviews #content .views-row .views-field-title,
+body.page-food-articles #content .views-row .views-field-title,
+body.page-recipes #content .views-row .views-field-title{
+font-size: 17px !important;
+text-transform: uppercase !important;
+}
+body.page-music-reviews #content .views-row .views-field-title a,
+body.page-food-reviews #content .views-row .views-field-title a,
+body.page-dance-reviews #content .views-row .views-field-title a,
+body.page-culture-reviews #content .views-row .views-field-title a,
+body.page-food-articles #content .views-row .views-field-title a,
+body.page-recipes #content .views-row .views-field-title a{
+color:black !important;
+}
+
+
+
+
+.calendar-calendar .day-view div.single-day .view-item{
+position:relative;
+}
+.calendar-calendar .day-view .full div.single-day .inner {
+    z-index: auto;
+}
+
+
+
+/* DATE PICKER CSS */
+
+#block-views-exp-day-picker-page{
+background-color:#dad3cb;
+width:300px;
+background-image: url("datepickerblock.jpg");
+background-repeat: no-repeat;
+background-position:right top;
+}
+#block-views-exp-day-picker-page .content{
+padding:35px 0px 20px 15px;
+}
+#block-views-exp-day-picker-page .content label{
+color:#342f3f;
+font-weight:bold;
+font-size:18px;
+padding-bottom:7px;
+}
+#block-views-exp-day-picker-page .content .description{
+font-weight:regular;
+font-size:14px;
+width:140px;
+padding-top: 10px;
+}
+#block-views-exp-day-picker-page .content #edit-submit-day-picker{
+font-weight:bold;
+font-size:16px;
+color:white;
+background-color:#bb3340;
+border:0px;
+margin-top:0px;
+padding:8px 25px;
+}
+#block-views-exp-day-picker-page .content #edit-submit-day-picker:hover{
+background-color:#881e30;
+}
+
+body.page-day-picker #main-wrapper .view-day-picker thead{
+background-color:#bb3340;
+color:white;
+padding:10px;
+}
+body.page-day-picker #main-wrapper .view-day-picker thead tr th{
+padding:7px 12px;
+}
+body.page-day-picker #main-wrapper .view-day-picker tbody{
+background-color:#fefeec;
+padding:10px;
+}
+body.page-day-picker #main-wrapper .view-day-picker tbody tr,
+body.page-day-picker #main-wrapper .view-day-picker tbody td{
+background-color:transparent;
+padding:7px 12px;
+border:0px;
+}
+body.page-day-picker #main-wrapper .view-day-picker tbody tr.odd{
+background-color:#faebcd;
+}
+
+body.page-day-picker #main-wrapper .view-day-picker tbody tr td a{
+color:#42446a;
+}
+
+
+
+
+/* NEW NEW NEW NEW NEW NEW NEW */
+body.node-type-article .node-article .field-name-body p img{
+	max-width:550px;
+	height:auto !important;
+}
+
+body.node-type-page .node-article .field-name-body p img{
+	max-width:550px;
+	height:auto !important;
+}
+
+
+/* GREEN */
+body.node-type-page #main-wrapper .region-content .view-content .views-row .seccionwhatsonfood a,
+body.node-type-page #main-wrapper .region-content .view-content .views-row .seccionwhatson2 a,
+body.page-whats-on-music-all #main-wrapper .views-row .seccionwhatson2 a{
+	color:#339900;
+	font-weight:bold;
+	font-size:16px;
+}
+/* GREEN */
+body.node-type-page #main-wrapper .region-content .view-content .views-row .seccionwhatson2{
+	display:block;
+}
+/* YELLOW */
+body.node-type-page #main-wrapper .region-content .view-content .views-row .seccionwhatson3 a{
+	font-weight:bold;
+	color:#f2a448;
+}
+
+
+
+
+
+/* TICKET PAGE */
+body.page-tickets .view-tickets{
+
+}
+body.page-tickets .view-tickets .views-row{
+	overflow:hidden;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:2px solid #ccc;
+}
+body.page-tickets .view-tickets .views-row-last{
+	border-bottom:0px;
+}
+
+body.page-tickets .view-tickets .views-row .views-field-field-ticket-image{
+	float:left;
+	margin-right:26px;
+}
+
+body.page-tickets .view-tickets .views-row .views-field-title{
+	color:#c33e28;
+	font-size:20px;
+	font-weight:bold;
+	margin-bottom:4px;
+}
+body.page-tickets .view-tickets .views-row .views-field-field-ticket-venue{
+	color:#6d8930;
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:4px;
+}
+body.page-tickets .view-tickets .views-row .views-field-field-ticketdate2{
+	color:#a0a0a0;
+	font-size:14px;
+	font-weight:normal;
+	margin-bottom:20px;
+}
+
+
+
+
+
+
+/* MINI BANNER - in top header */
+#mini-banner-area{
+	margin-top: -30px;
+}
+
+
+#headersearch,
+#subscribe{
+	display:none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+

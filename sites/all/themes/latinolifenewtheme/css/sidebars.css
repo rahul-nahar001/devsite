@@ -1,0 +1,66 @@
+
+/* Fixed layout; both sidebars on right */
+
+#page, #page-wrapper, .region-page-closure, body.no-sidebars #content {
+  width: 1112px;
+  background-color:#FFFFFF;
+  border-style:solid;
+  border-color:#FFFFFF;
+  border-width:2px;
+}
+
+div.region-sidebar-first {
+  width: 302px;
+}
+
+div.region-sidebar-second {
+  width: 100px;
+  margin-left: 972px;
+  margin-right: -1112px;
+}
+
+body.two-sidebars div.region-sidebar-first {
+  margin-left: 645px;
+  margin-right: -992px;
+  /*position:relative;
+  top:300px;*/
+}
+
+body.two-sidebars div.region-sidebar-second {
+  margin-right: -1112px;
+}
+
+body.sidebar-first div.region-sidebar-first {
+  margin-left: 810px;
+  margin-right: -1112px;
+}
+
+div.region-sidebar-first div.section {
+	position:relative;
+	top:-40px;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+
+body.sidebar-second div.region-sidebar-second {
+  margin-left: 992px;
+}
+
+body.no-sidebars #content, body.one-sidebar #content, body.two-sidebars #content {
+  margin-left: 0px;
+}
+
+body.sidebar-first #content {
+  width: 810px;
+  margin-right: -810px;
+}
+
+body.sidebar-second #content {
+  width: 992px;
+  margin-right: -992px;
+}
+
+body.two-sidebars #content {
+  width: 635px;
+  margin-right: -690px;
+}
