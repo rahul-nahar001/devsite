@@ -383,14 +383,14 @@ border-radius:3px 3px 0px 0px;
 }
 
 .tm_header_file {
-width:1155PX;
+width:1215PX;
 height:150px;
 margin:auto;
 }
 
 .tm_header_logo_ads {
-padding:30px 0px 30px 0px;
-height:90px;
+padding:0;
+height:150px;
 }
 
 /******** TOP MENU ********/
@@ -455,15 +455,18 @@ float:left;
 }
 
 .tm_logo_img img {
-max-height:90px;
+max-height:150px;
+display: block;
 }
 
 /******** 468 TOP AD SPACE ********/
 .tm_topads_728 {
-float:right;
-width:728px;
-height:90px;
-padding:0px 0px 0px 0px;
+    float: right;
+    width: 710px;
+    height: 150px;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 /******** MENU WP ********/
@@ -501,10 +504,10 @@ text-decoration:none;
 list-style:none;
 margin:0px;
 padding:0px;
+position: relative;
 }
 
 .navigasi_menu li {
-position:relative;
 float:left;
 font-size:18px;
 height:45px;
@@ -514,11 +517,15 @@ height:45px;
 float:left;
 }
 
+.navigasi_menu .menu-main-menu-container > ul > li > a{
+	border-right: 1px solid #bdbdbd;
+}
 .navigasi_menu li a {
 line-height:44px;
 height:45px;
 display:inline-block;
 text-transform:uppercase;
+font-weight: 700;
 }
 
 .current-menu-item {
@@ -526,32 +533,29 @@ text-transform:uppercase;
 
 .navigasi_menu ul li ul {
 display:none;
-float:left;
 left:0;
-position:absolute;
 z-index:99999;
+position: absolute;
+width: 100%;
+background-color: #fff;
 }
 
 .navigasi_menu ul li ul li {
 position:relative;
 float:left;
 font-size:18px;
-width:220px;
 border-right:0px;
 }
 
-.navigasi_menu ul li ul li:hover {
-background:#f4f4f4;
-color:#222222;
+.navigasi_menu ul li ul li a {
+font-size: 14px;
 }
 
 .navigasi_menu ul li ul li:hover a {
 }
 
-.navigasi_menu ul li:hover > ul {
-display:block;
-background:#E0E0E0;
-border-top:5px solid #aaaaaa;
+.navigasi_menu ul li a.active-trail + ul {
+display:flex;
 }
 
 .sub-menu li a {
@@ -640,6 +644,7 @@ float:none;
 .tm_content {
 margin:auto;
 width:1155px;
+margin-top: 60px;
 }
 
 .widgettitle {
