@@ -14,6 +14,11 @@
 				if($page["footer_col_two"]):
 					print '<div class="footer_brick_2 footer_brick_inner"><div class="footerwidget"><ul>';
 						print render($page["footer_col_two"]);
+
+				if ($page['left_bar']): 
+					print render($page['left_bar']);
+				endif;
+	
 					print '</ul></div></div>';
 				endif;
 				

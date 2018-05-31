@@ -28,7 +28,7 @@
 						print render($page['content']); 
 					?>
 					<?php if($page['content_bottom']):?>
-						<li class="tm_center_two_col">
+						<li class="widget widget_content block block-views nd-homepage-login-tag">
 							<?php print render($page['content_bottom']);?>
 						</li>
 					<?php endif; ?>

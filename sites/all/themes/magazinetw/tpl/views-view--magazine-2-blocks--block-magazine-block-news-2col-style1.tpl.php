@@ -2,7 +2,7 @@
 <?php if ($header): ?>
 <?php print $header; ?>
 <?php endif; ?>
-<div class="tm_top_menu_social">
+<div class="tmmyid_twobox_list">
 	<?php if ($rows): ?>
 		<?php print $rows; ?>
 	<?php endif; ?>
