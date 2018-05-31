@@ -19,6 +19,7 @@ regions[slideshow] = 'Slideshow'
 
 regions[content] = 'Main content'
 regions[content_fullwide] = 'Main content - Fullwide'
+regions[content_bottom] = 'Main content bottom'
 
 regions[highlighted] = 'Highlighted'
 

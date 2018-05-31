@@ -27,6 +27,11 @@
 						print $messages;
 						print render($page['content']); 
 					?>
+					<?php if($page['content_bottom']):?>
+						<li class="tm_center_two_col">
+							<?php print render($page['content_bottom']);?>
+						</li>
+					<?php endif; ?>
 				</ul>
 			</div>
 			<!--</center blog widget>-->
